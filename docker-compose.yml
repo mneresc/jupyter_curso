@@ -1,10 +1,13 @@
 version: "3"
 services:
   jupyter:
-      image: jupyter/minimal-notebook
-      environment:
-        - JUPYTER_ENABLE_LAB=yes
-        - PASSWORD="pistols04"
+      image: jupyter/datascience-notebook
+      container_name:   jupyter_notebook
+      # environment:
+      #   - JUPYTER_ENABLE_LAB=yes
+      #   - PASSWORD="senha"
+      #   - ACCESS_TOKEN=sha1:d4c78fe19cb5:0c8f830971d52da9d74b9985a8b87a2b80fc6e6a
       ports:
         - "8888:8888"
-#python3 -m pip install jupyter
+      volumes:
+        - .:/home/jovyan/work
