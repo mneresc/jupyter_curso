@@ -2,7 +2,7 @@ version: "3"
 services:
   jupyter:
       image: jupyter/datascience-notebook
-      container_name:   jupyter_notebook
+      container_name:   jupyter_notebook_x
       # environment:
       #   - JUPYTER_ENABLE_LAB=yes
       #   - PASSWORD="senha"
